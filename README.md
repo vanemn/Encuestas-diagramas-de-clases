@@ -15,6 +15,8 @@ Este archivo tiene un contenido y una ayuda las cuales se pueden modificar libre
 
 En este archivo se agrega un enunciado y una ayuda, una indicación de si es requerida y una lista de alternativas. Todas estas características se pueden consultar y modificar libremente, excepto las alternativas. Una pregunta solo puede existir como parte de una encuesta.
 
+## encuesta.py
+
 ## Prerrequisitos o Dependencias
 
 Sistema Operativo Windows, Linux, MacOS
