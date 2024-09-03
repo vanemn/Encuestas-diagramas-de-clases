@@ -52,7 +52,7 @@ class Encuesta:
         """
         preguntas_mostradas = [preg.mostrarPregunta() for preg in self._preguntas]
         respuestas_mostradas = [resp.get_respuestas() for resp in self._listadosRespuestas]
-        return f"Nombre: {self.nombre}, Preguntas: {preguntas_mostradas}, Respuestas: {respuestas_mostradas}"
+        return f"Nombre: {self.nombre}, \nPreguntas: {preguntas_mostradas}, \nRespuestas: {respuestas_mostradas}"
 
 
 class EncuestaLimitadaEdad(Encuesta):

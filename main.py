@@ -19,20 +19,20 @@ def main():
     respuestas = [1]
     usuario.contestar_encuesta(encuesta,respuestas)
 
-    print(f"Encuesta:{encuesta.mostrarEncuesta()}" )
+    print(f"Encuesta:{encuesta.mostrarEncuesta()}\n" )
    
     # Crear una encuesta limitada por edad
 
     encuesta_limitada_edad = EncuestaLimitadaEdad("Encuesta de Preferencias", 18, 60)
     encuesta_limitada_edad._preguntas.append(pregunta1)
     usuario.contestar_encuesta(encuesta_limitada_edad,respuestas)
-    print(f"Encuesta Limitada por Edad:{encuesta_limitada_edad.mostrarEncuesta()}" )
+    print(f"Encuesta Limitada por Edad:{encuesta_limitada_edad.mostrarEncuesta()}\n" )
 
     # Crear una encuesta limitada por región
     encuesta_limitada_region = EncuestaLimitadaRegion("Encuesta de Preferencias", [1, 2, 3])
     encuesta_limitada_region._preguntas.append(pregunta1)
     usuario.contestar_encuesta(encuesta_limitada_region,respuestas)
-    print(f"Encuesta Limitada por Región:{encuesta_limitada_region.mostrarEncuesta()}" )
+    print(f"Encuesta Limitada por Región:{encuesta_limitada_region.mostrarEncuesta()}\n" )
 
     
 
