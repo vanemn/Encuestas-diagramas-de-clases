@@ -7,7 +7,7 @@ Se crea el siguiente diagrama de clases en base a lo indicado por el cliente:
 
 ![alt text](Diagrama_modificado.drawio.png)
 
-## alternativas.py
+## alternativa.py
 
 Este archivo tiene un contenido y una ayuda las cuales se pueden modificar libremente y Una alternativa solo puede existir como parte de una pregunta.
 
