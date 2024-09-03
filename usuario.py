@@ -1,5 +1,5 @@
-from listado_respuestas import ListadoRespuestas
 
+from listado_respuestas import ListadoRespuestas
 class Usuario:
     def __init__(self, correo, edad, region):
         """
@@ -47,14 +47,14 @@ class Usuario:
             raise ValueError("La región debe ser un número entero positivo.")
 
     # Métodos
-    def contestar_encuesta(self, respuestas):
+    def contestar_encuesta(self, encuesta, respuestas):
         """
-        Crea un objeto ListadoRespuestas asociado al usuario.
+        Responde una encuesta con un listado de respuestas.
 
         Args:
+            encuesta (Encuesta): La encuesta a responder.
             respuestas (list[int]): Lista de respuestas (números enteros).
-
-        Returns:
-            ListadoRespuestas: Instancia de ListadoRespuestas asociada al usuario.
         """
-        return ListadoRespuestas(self, respuestas)
+        listado_respuestas = ListadoRespuestas(self, respuestas)
+        encuesta.agregarListadoRespuestas(listado_respuestas)
+        

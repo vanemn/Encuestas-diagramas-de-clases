@@ -1,3 +1,5 @@
+
+
 class ListadoRespuestas:
     def __init__(self, usuario, respuestas):
         """
@@ -19,6 +21,5 @@ class ListadoRespuestas:
         """Retorna las respuestas del listado."""
         return self._respuestas
     
-    # metodos 
 
 

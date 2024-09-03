@@ -37,22 +37,22 @@ class Encuesta:
         """
         self._preguntas.append(pregunta)
 
-    def agregarListadoRespuestas(self, listado_respuestas):
+    def agregarListadoRespuestas(self, listadorespuestas: ListadoRespuestas):
         """
         Agrega un listado de respuestas a la encuesta.
 
         Args:
             listado_respuestas (ListadoRespuestas): El listado de respuestas que se desea agregar.
         """
-        self._listadosRespuestas.append(listado_respuestas)
+        self._listadosRespuestas.append(listadorespuestas)
 
     def mostrarEncuesta(self):
         """
         Muestra el nombre de la encuesta y las preguntas asociadas.
         """
-        print(f"Nombre: {self.nombre}")
-        for pregunta in self._preguntas:
-            pregunta.mostrarPregunta()
+        preguntas_mostradas = [preg.mostrarPregunta() for preg in self._preguntas]
+        respuestas_mostradas = [resp.get_respuestas() for resp in self._listadosRespuestas]
+        return f"Nombre: {self.nombre}, Preguntas: {preguntas_mostradas}, Respuestas: {respuestas_mostradas}"
 
 
 class EncuestaLimitadaEdad(Encuesta):
