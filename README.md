@@ -5,7 +5,7 @@ alternativas y respuestas.
 
 Se crea el siguiente diagrama de clases en base a lo indicado por el cliente:
 
-![alt text](image-1.png)
+![alt text](mermaid-diagram-2024-09-02-193738.png)
 
 ## alternativas.py
 
